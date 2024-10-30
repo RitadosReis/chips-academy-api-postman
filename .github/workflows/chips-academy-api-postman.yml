@@ -1,10 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-<<<<<<< HEAD
-name: Tests API Postman
-=======
 name: Chips - Tests API Postman
->>>>>>> 06254a44b6379b7d775ff8bafa274647fca27728
 
 # Controls when the workflow will run
 on:
@@ -41,11 +37,7 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Step 3 Execute collection
-<<<<<<< HEAD
-        run: newman run ./chips-collection.json -e ./chips-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
-=======
         run: newman run ./chips-postman-collection.json -e ./chips-postman-env.json --reporters cli, -r htmlextra --reporter-htmlextra-export ./results/Report.html
->>>>>>> 06254a44b6379b7d775ff8bafa274647fca27728
 
       # Runs a set of commands using the runners shell
       - name: Step 4 Archive production artifacts
